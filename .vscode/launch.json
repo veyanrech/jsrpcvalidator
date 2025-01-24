@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "go",
+            "request": "launch",
+            "name": "Launch rpc requests",
+            "mode": "auto",
+            "program": "${workspaceFolder}/go/main.go",
+            
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "RPC VALIDATION SERVER",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/node/server.js",
+            "runtimeExecutable": "/opt/homebrew/bin/node"
+        }
+    ]
+}
